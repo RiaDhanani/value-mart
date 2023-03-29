@@ -5,6 +5,10 @@
     padding: 10px 30px;
     color: #D5D5D5;
     height: 70px;
+    border-bottom: 2px solid #444444;
+    position: fixed;
+    width: 100%;
+    z-index: 1000000000000000000000;
 }
   
 .navBarDiv {
@@ -26,12 +30,34 @@
     vertical-align: middle;
 }
 
+.searchContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.searchIcon {
+    margin-left: 6px;
+    position: absolute;
+    font-size: 1.1rem;
+}
+
 .search {
-    height: 1rem;
-    padding: 0.7rem;
+    width: 80%;
+    outline: none;
+    height: 1.7rem;
+    padding: 0.7rem 0.7rem 0.7rem 1.5rem;
     background-color: #444444;
-    border: none;
+    border: 2px solid transparent;
     border-radius: 10px;
+    font-size: 1rem;
+    color: #D5D5D5;
+    transition: all .2s ease-in;
+}
+
+.search:focus {
+    border: 2px solid #D5D5D5;
+    width: 100%;
 }
 
 .profileIcon {

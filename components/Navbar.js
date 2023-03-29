@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import Button from './Button'
 import { BiChevronDown } from "@react-icons/all-files/bi/BiChevronDown";
+import { MdSearch } from "@react-icons/all-files/md/MdSearch";
 import navbarStyle from './Navbar.module.css'
 
 const Navbar = () => {
@@ -11,24 +13,25 @@ const Navbar = () => {
                     <a className={navbarStyle.navBarAnchor}>
                         <Image 
                             src="/box-icon.svg"
-                            height={50}
-                            width={50}
+                            height={45}
+                            width={45}
                             className={navbarStyle.navBarImage}
                         />
                     </a>
                 </Link>
                 <Link href="/browse"><a className="browse">Browse<BiChevronDown className={navbarStyle.chevron}/></a></Link>
-                <form>
+                <div className={navbarStyle.searchContainer}>
+                    <MdSearch className={navbarStyle.searchIcon}/>
                     <input type="text" name="searchbar" className={navbarStyle.search}/>
-                </form>
+                </div>
             </div>
             <div className={navbarStyle.navBarDiv}>
-                <a>+ Add Item</a>
+                <Link href="/browse" passHref><Button text={'+ Add Item'} navBar={true}/></Link>
                 <a className={navbarStyle.navBarAnchor}>
                     <Image 
                         src="/user-circle-solid.svg"
-                        height={50}
-                        width={50}
+                        height={40}
+                        width={40}
                         className={navbarStyle.profileIcon}
                     />
                 </a>

@@ -1,0 +1,33 @@
+.browse {
+    display: flex;
+    height: 100%;
+    padding-top: 70px;
+}
+
+.sideBar {
+    width: 20%;
+    min-height: calc(100vh - 70px);
+    position: fixed;
+    border-right: 2px solid #444444;
+}
+
+.items {
+    margin-left: 20%;
+    padding: 30px 80px;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.itemTitle {
+    font-size: 2rem;
+}
+
+.itemList {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+}

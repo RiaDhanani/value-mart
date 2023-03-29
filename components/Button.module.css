@@ -8,6 +8,21 @@
     transition: all 0.3s ease-in;
 }
 
+.navBarBtn {
+    color: #D1AE00;
+    border: 2px solid #D1AE00;
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 5px 30px;
+    font-size: 1rem;
+    transition: all 0.3s ease-in;
+}
+
+.navBarBtn:hover {
+    background-color: #D1AE00;
+    color: #232323;
+}
+
 .btn:hover {
     background-color: #D1AE00;
     color: #232323;
