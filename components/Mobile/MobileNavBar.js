@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image'
 import Link from 'next/link'
-import Button from '../Button'
 import Modal from '../Modal';
 import LoginPromptModal from '../LoginPromptModal'
 import { BiChevronDown } from "@react-icons/all-files/bi/BiChevronDown";
@@ -24,7 +23,7 @@ const MobileNavbar = ({ dispatch, setShowFilters, showFilters }) => {
     const [showItemModal, setShowItemModal] = useState(false);
     const [showDelete, setShowDelete] = useState(false);
     const [itemToDelete, setItemToDelete] = useState(null);
-    const { user, error, isLoading } = useUser();
+    const { user } = useUser();
 
     function handleSearchSubmit (e) {
         e.preventDefault();
@@ -74,11 +73,7 @@ const MobileNavbar = ({ dispatch, setShowFilters, showFilters }) => {
                 </Link>
                 <button onClick={() => setShowFilters(!showFilters)}>Filter <BiChevronDown className={`${navbarStyle.chevron} ${ showFilters ? `${navbarStyle.rotated}` : `` }`}/></button>
             </div>
-            {/* <div>
-                <Button onClick={() => setShowModal(true)} text={'+ Add Item'} navBar={true}/>
-            </div> */}
             <div className={navbarStyle.navBarDivLarge}>
-                {/* <button onClick={() => setSearchBarView(!searchBarView)}><MdSearch className={navbarStyle.searchIcon}/></button> */}
                 <form className={navbarStyle.searchContainer} onSubmit={handleSearchSubmit}>
                     <label htmlFor="searchbar" onClick={() => setSearchBarView(!searchBarView) }><MdSearch className={navbarStyle.searchIcon}/></label>
                     <input type="text" name="searchbar" id="searchbar" className={searchBarView ? `` : `${navbarStyle.hidden}`} value={search} onChange={handleSearchChange} placeholder="Search"/>
@@ -86,7 +81,6 @@ const MobileNavbar = ({ dispatch, setShowFilters, showFilters }) => {
                 </form>
                 <button onClick={() => setOpenMenu(!openMenu)}><MdMenu className={navbarStyle.menuIcon}/></button>
                 { openMenu ? <MobileMenu setOpenMenu={setOpenMenu} openMenu={openMenu} openModal={openModal} setShowItemModal={setShowItemModal}/> : ''}
-                {/* <Button onClick={() => setShowModal(true)} text={'+ Item'} navBar={true}/> */}
             </div>
             <Modal show={showModal} onClose={() => setShowModal(false)}/>
             <LoginPromptModal showLoginPromptModal={showLoginPromptModal} onClose={() => setShowLoginPromptModal(false)}/>

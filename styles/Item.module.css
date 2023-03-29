@@ -1,5 +1,4 @@
 .container {
-    /* border: 1px solid blue; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,9 +15,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border: 1px solid red; */
-    /* font-size: 2.5rem;
-    flex-shrink: 1; */
 }
 
 .back a {
@@ -54,12 +50,10 @@
     display: flex;
     width: 85%;
     justify-content: space-between;
-    /* border: 1px solid yellow; */
     flex-grow: 0.75;
 }
 
 .imageContainer {
-    /* border: 1px solid green; */
     width: 45%;
     position: relative;
     border-radius: 10px;
@@ -74,25 +68,21 @@
 }
 
 .info {
-    /* border: 1px solid red; */
     width: 45%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* gap: 10% */
 }
 
 .name {
     display: flex;
     align-items: center;
-    /* border: 1px solid red; */
     flex-grow: 0.5;
     overflow: hidden;
 
 }
 
 .infoText {
-    /* border: 1px solid red; */
     flex-grow: 1;
     display: flex;
     flex-direction: column;

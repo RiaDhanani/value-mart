@@ -18,10 +18,10 @@ import Head from 'next/head'
 
 const Item = ({ slug }) => {
   const isBreakPoint = useMediaQuery(799)
-  const { getSingleItem, deleteItem } = useItems()
+  const { getSingleItem } = useItems()
   const item = getSingleItem(slug)
   const router = useRouter()
-  const { user, error, isLoading } = useUser();
+  const { user } = useUser();
   const [showDelete, setShowDelete] = useState(false);
   const [itemToDelete, setItemToDelete] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -35,11 +35,6 @@ const Item = ({ slug }) => {
   function goBack (e) {
     e.preventDefault();
     router.push('/browse')
-  }
-
-  async function deleteCurrentItem (id) {
-    await router.push('/browse');
-    deleteItem(id);
   }
 
   function deleteConfirm (id) {
@@ -136,7 +131,6 @@ const Item = ({ slug }) => {
                     <MdPhoneIphone />
                   </div>
                   {generateContact(item.contact, <p className={itemStyle.contact}><span className={itemStyle.bold}>{Object.entries(item.contact)[0][0]}:&#160;</span> {Object.entries(item.contact)[0][1]}</p>)}
-                  {/* <p><span className={itemStyle.bold}>{Object.entries(item.contact)[0][0]}:&#160;</span> {Object.entries(item.contact)[0][1]}</p> */}
                 </div>
                 <div className={itemStyle.individualInfo}>
                   <div className={itemStyle.individualInfoIcon}>

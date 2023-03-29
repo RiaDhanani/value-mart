@@ -7,7 +7,7 @@ import { FaUser } from "@react-icons/all-files/fa/FaUser";
 import { useUser } from '@auth0/nextjs-auth0';
 
 const MobileMenu = ({ setOpenMenu, openMenu, openModal, setShowItemModal }) => {
-    const { user, error, isLoading } = useUser();
+    const { user } = useUser();
 
     function handleOpenItemModal () {
         setShowItemModal(true);

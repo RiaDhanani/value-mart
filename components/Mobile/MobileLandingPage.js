@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import Modal from '../Modal';
-import AddItem from '../AddItem'
 import Link from 'next/link'
 import Button from '../Button'
 import { useUser } from '@auth0/nextjs-auth0';
@@ -10,7 +9,7 @@ import LoginPromptModal from '../LoginPromptModal'
 const MobileLandingPage = () => {
     const [showModal, setShowModal] = useState(false);
     const [showLoginPromptModal, setShowLoginPromptModal] = useState(false);
-    const { user, error, isLoading } = useUser();
+    const { user } = useUser();
 
     return (
         <div className={LandingPageStyles.landingPageDisplay}>

@@ -13,7 +13,7 @@ const NestedLayout = ({ children }) => {
     const { items } = useItems();
 
     const [currentItems, setCurrentItems] = useState(items)
-    const [searchTermm, setSearchTerm] = useState('') //useRef instead
+    const [searchTermm, setSearchTerm] = useState('')
 
     const [showFilters, setShowFilters] = useState(false);
 
@@ -30,16 +30,6 @@ const NestedLayout = ({ children }) => {
         broken: { Unbroken: true, PartiallyBroken: true, CompletelyBroken: true },
         type: { Electronics: true, Books: true, CDs: true, Household: true, Furniture: true, Other: true },
     });
-
-    // function selectAll(category) {
-    //     const selectedCategory = filters[category];
-    //     Object.keys(selectedCategory).forEach(v => selectedCategory[v] = true)
-    // }
-
-    // function deselectAll(category) {
-    //     const selectedCategory = filters[category];
-    //     Object.keys(selectedCategory).forEach(v => selectedCategory[v] = false)
-    // }
      
     const [filteredItems, setFilteredItems] = useState(currentItems);
 
@@ -111,11 +101,8 @@ const NestedLayout = ({ children }) => {
         <FilterContext.Provider value={filteredItems}>
             <main className={browseStyle.main}>
                 { isBreakPoint ? <MobileNavbar dispatch={dispatch} setShowFilters={setShowFilters} showFilters={showFilters}/> :  <Navbar dispatch={dispatch}/>}
-                {/* { isBreakPoint ? <button className={browseStyle.filterButton}>Filter</button> :  ''} */}
                 <div className={browseStyle.browse}>
                     { isBreakPoint ? showFilters ? <Sidebar filters={filters} setFilters={setFilters}/> :  '' :  <Sidebar filters={filters} setFilters={setFilters}/>}
-                    {/* { showFilters ? '' :  <Sidebar filters={filters} setFilters={setFilters}/>} */}
-                    {/* <Sidebar filters={filters} setFilters={setFilters}/> */}
                         {children}
                 </div> 
             </main>

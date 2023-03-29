@@ -5,15 +5,14 @@ import { useItems } from './ItemContext'
 import { v4 as uuidv4 } from 'uuid';
 import { BsUpload } from "@react-icons/all-files/bs/BsUpload";
 import { useUser } from '@auth0/nextjs-auth0';
-import { BiChevronDown } from "@react-icons/all-files/bi/BiChevronDown";
 
 const AddItem = ({ setAddItemDone, setAddedItem }) => {
     const id = uuidv4();
-    const { addItem, items } = useItems();
+    const { addItem } = useItems();
     const [itemImage, setItemImage] = useState(null);
     const [loadingImage, setLoadingImage] = useState(false)
     const [imageText, setImageText] = useState("Click to Upload Image")
-    const { user, error, isLoading } = useUser();
+    const { user } = useUser();
     const container = useRef();
 
     function uploadImage(e) {

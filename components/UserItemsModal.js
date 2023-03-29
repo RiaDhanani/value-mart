@@ -8,7 +8,7 @@ import modalStyle from '../styles/UserItemsModal.module.css'
 
 const UserItemsModal = ({ show, onClose, setItemToDelete, setShowDelete }) => {
     const { items } = useItems();
-    const { user, error, isLoading } = useUser();
+    const { user } = useUser();
     const [isBrowser, setIsBrowser] = useState(false);
     const [userItems, setUserItems] = useState([]);
     const router = useRouter();

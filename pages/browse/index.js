@@ -9,7 +9,7 @@ import Head from 'next/head'
 
 
 const Browse = () => {
-  const { user, error, isLoading } = useUser();
+  const { isLoading } = useUser();
     const filteredItems = useContext(FilterContext)
 
     if (isLoading) {
@@ -17,8 +17,9 @@ const Browse = () => {
         <>
           <Head>
             <title>Browse | Trash or Treasure</title>
+            <meta name="keywords" content="Sri Lanka, free, used, trinkets, random, Trash or Treasure, trash, treasure"></meta>
           </Head>
-          <h1 style={{textAlign: 'center'}}>Loading...</h1>
+          <h1 style={{ width: '100%', marginTop: '20px', textAlign: 'center', color:'#d5d5d5'}}>Loading...</h1>
         </>
       )
     }

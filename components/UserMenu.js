@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import menuStyle from '../styles/UserMenu.module.css'
 import { useUser } from '@auth0/nextjs-auth0';
 import { BiLogIn } from "@react-icons/all-files/bi/BiLogIn";
@@ -6,8 +5,7 @@ import { BiLogOut } from "@react-icons/all-files/bi/BiLogOut";
 import { BiGift } from "@react-icons/all-files/bi/BiGift";
 
 const UserMenu = ({ openMenu, setOpenMenu, setShowItemModal }) => {
-    const { user, error, isLoading } = useUser();
-    // const [showModal, setShowModal] = useState(false);
+    const { user } = useUser();
 
     function handleOpenItemModal (e) {
         e.preventDefault();
@@ -42,7 +40,6 @@ const UserMenu = ({ openMenu, setOpenMenu, setShowItemModal }) => {
                 </a>
             }
             </div>
-            {/* <UserItemsModal show={showModal} onClose={() => setShowModal(false)}/> */}
         </div>
     )
 }

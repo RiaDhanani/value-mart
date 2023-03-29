@@ -21,7 +21,7 @@ const Navbar = ({ dispatch }) => {
     const [search, setSearch] = useState('');
     const [showDelete, setShowDelete] = useState(false);
     const [itemToDelete, setItemToDelete] = useState(null);
-    const { user, error, isLoading } = useUser();
+    const { user } = useUser();
 
     function handleSearchSubmit (e) {
         e.preventDefault();
@@ -70,7 +70,6 @@ const Navbar = ({ dispatch }) => {
             </div>
             <div className={navbarStyle.navBarDivLarge}>
                 {user ? <Button onClick={() => setShowModal(true)} text={'+ Add Item'} navBar={true}/> : <Button onClick={() => setShowLoginPromptModal(true)} text={'+ Add Item'} navBar={true}/>}
-                {/* <Button onClick={() => setShowModal(true)} text={'+ Add Item'} navBar={true}/> */}
                 { user ?  (
                     <a href="#" onClick={handleMenuOpen} className={navbarStyle.navBarAnchor}>
                         <Image 

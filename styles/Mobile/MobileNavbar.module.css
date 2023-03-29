@@ -16,7 +16,6 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    /* border: 1px solid red; */
     width:50%;
     gap: 15px;
     
@@ -150,11 +149,6 @@
     border: none;
     color: #d5d5d5  
 }
-
-/* .add {
-    color: #D1AE00;
-
-} */
 
 .subMenuIcon {
     font-size: 1.2rem;

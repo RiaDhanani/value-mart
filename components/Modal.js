@@ -5,7 +5,7 @@ import { MdClose } from "@react-icons/all-files/md/MdClose";
 import AddItem from './AddItem';
 import ItemAdded from './ItemAdded';
 
-const Modal = ({ show, onClose, children }) => {
+const Modal = ({ show, onClose }) => {
     const [isBrowser, setIsBrowser] = useState(false);
     const [addItemDone, setAddItemDone] = useState(false);
     const [addedItem, setAddedItem] = useState({});
