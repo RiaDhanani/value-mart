@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image'
 import Link from 'next/link'
 import Button from './Button'
@@ -8,8 +8,22 @@ import { BiChevronDown } from "@react-icons/all-files/bi/BiChevronDown";
 import { MdSearch } from "@react-icons/all-files/md/MdSearch";
 import navbarStyle from '../styles/Navbar.module.css'
 
-const Navbar = () => {
+const Navbar = ({ dispatch }) => {
     const [showModal, setShowModal] = useState(false);
+    const [search, setSearch] = useState('');
+
+    function handleSearchSubmit (e) {
+        e.preventDefault();
+        dispatch({ type: 'search', payload: { searchTerm: search } })
+    }
+
+    function handleSearchChange (e) {
+        setSearch(e.target.value)
+    }
+
+    useEffect(() => {
+        dispatch({ type: 'search', payload: { searchTerm: search } })
+    }, [search])
 
     return (
         <nav className={navbarStyle.navBar}>
@@ -25,10 +39,10 @@ const Navbar = () => {
                     </a>
                 </Link>
                 <Link href="/browse"><a className="browse">Browse<BiChevronDown className={navbarStyle.chevron}/></a></Link>
-                <div className={navbarStyle.searchContainer}>
+                <form className={navbarStyle.searchContainer} onSubmit={handleSearchSubmit}>
                     <MdSearch className={navbarStyle.searchIcon}/>
-                    <input type="text" name="searchbar" className={navbarStyle.search}/>
-                </div>
+                    <input type="text" name="searchbar" className={navbarStyle.search} value={search} onChange={handleSearchChange} />
+                </form>
             </div>
             <div className={navbarStyle.navBarDiv}>
                 <Button onClick={() => setShowModal(true)} text={'+ Add Item'} navBar={true}/>

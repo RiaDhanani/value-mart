@@ -9,6 +9,19 @@
     flex-direction: column;
     gap: 20px;
     overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #D5D5D5 #444444;
+}
+
+.sideBar::-webkit-scrollbar {
+    width: 10px;
+}
+
+.sideBar::-webkit-scrollbar-track {
+    background: #444444;
+}
+.sideBar::-webkit-scrollbar-thumb {
+    background-color: #D5D5D5;
 }
 
 .sideBarTitle {
@@ -100,3 +113,9 @@
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
 }
+
+/* @media screen and (max-width: 600px) {
+    .sideBar {
+        display: none
+    }
+} */

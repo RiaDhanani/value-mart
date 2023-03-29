@@ -1,7 +1,6 @@
 .landingPage {
     display: flex;
     height: 100vh;
-
 }
 
 .landingPageDisplay {
@@ -43,6 +42,11 @@
     width: 30%;
     background-color: #232323;
     position: relative;
+    background-image: url("../public/box-icon.svg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 25%;
+    background-size: 40%;
 }
 
 .boxImage {
@@ -61,3 +65,20 @@
     justify-content: space-between;
     color: #D5D5D5;
 }
+
+@media screen and (max-width: 600px) {
+    .landingPage {
+        flex-direction: column;
+    }
+
+    .landingPageDisplay {
+        width: 100%;
+        height: 50%;
+    }
+
+    .landingPageSidebar {
+        width: 100%;
+        height: 50%;
+        background:none;
+    }
+} 

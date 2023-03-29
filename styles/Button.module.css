@@ -1,4 +1,5 @@
 .btn {
+    min-width: 250px;
     color: #D1AE00;
     border: 3px solid #D1AE00;
     border-radius: 10px;

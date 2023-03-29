@@ -5,6 +5,19 @@ body {
     font-size: 18px;
     background-color: #232323;
     color: #D5D5D5;
+    scrollbar-width: thin;
+    scrollbar-color: #D5D5D5 #444444;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #444444;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #D5D5D5;
 }
 
 a {
