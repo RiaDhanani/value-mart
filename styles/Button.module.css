@@ -1,30 +1,47 @@
 .btn {
-    min-width: 250px;
+    width: 100%;
+    max-width: 250px;
     color: #D1AE00;
     border: 3px solid #D1AE00;
     border-radius: 10px;
-    background-color: transparent;
+    background-color: #232323;
     padding: 15px 30px;
     font-size: 1rem;
-    transition: all 0.3s ease-in;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .navBarBtn {
+    cursor: pointer;
     color: #D1AE00;
     border: 2px solid #D1AE00;
     border-radius: 10px;
-    background-color: transparent;
+    background-color: #232323;
     padding: 5px 30px;
     font-size: 1rem;
-    transition: all 0.3s ease-in;
+    transition: all 0.3s ease;
 }
 
-.navBarBtn:hover {
-    background-color: #D1AE00;
-    color: #232323;
+@media (hover: hover) {
+    .navBarBtn:hover {
+        background-color: #D1AE00;
+        color: #232323;
+    }
+    
+    .btn:hover {
+        background-color: #D1AE00;
+        color: #232323;
+    }
 }
 
-.btn:hover {
-    background-color: #D1AE00;
-    color: #232323;
+
+@media screen and (max-width: 799px) {
+    .navBarBtn {
+        padding: 5px 5px;
+        max-width: 100px;
+    }
+
+    .btn {
+        align-self: center;
+    }
 }

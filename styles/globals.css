@@ -5,8 +5,13 @@ body {
     font-size: 18px;
     background-color: #232323;
     color: #D5D5D5;
+
     scrollbar-width: thin;
     scrollbar-color: #D5D5D5 #444444;
+}
+
+body {
+  
 }
 
 body::-webkit-scrollbar {
@@ -33,4 +38,10 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
+}
+
+@media screen and (max-width: 1200px) {
+  html, body {
+    font-size: 16px;
+  }
 }

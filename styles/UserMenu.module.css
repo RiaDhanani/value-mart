@@ -1,0 +1,53 @@
+.menu {
+    border-top: 2px solid #444444;
+    position: absolute;
+    background-color: #232323;
+    top: 69px;
+    right: 0;
+    z-index: 150;
+    width: 65%;
+    max-width: 300px;
+    
+}
+
+.menuItem {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 15px;
+    text-align: left;
+    border-bottom: 2px solid #444444;
+    color: #D1AE00;
+    transition: all 0.2s ease;
+}
+
+@media (hover: hover) {
+    .menuItem:hover {
+        background-color: #2c2c2c;
+    }
+}
+
+
+.menuItem p {
+    color: #d5d5d5;
+    width: 80%;
+}
+
+.username {
+    font-size: 0.9rem;
+}
+
+.menuOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width:100vw;
+    z-index: 149;
+    background-color: rgba(0, 0, 0, 0.274);
+}
+
+.subMenuIcon {
+    font-size: 1.2rem;
+}

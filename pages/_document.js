@@ -8,8 +8,11 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
-        <Head />
+      <Html lang="en-US">
+        <Head>
+          <meta name="description" content="Trash or Treasure provides a place for Sri Lankans to give away their unwanted belongings to anyone who could make better use of them. If you are interested in finding interesting trinkets, come browse through our collection."></meta>
+          <meta name="author" content="Priyanka de Silva"></meta>
+        </Head>
         <body>
           <Main />
           <NextScript />

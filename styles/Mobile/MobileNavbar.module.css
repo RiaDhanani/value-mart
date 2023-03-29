@@ -1,0 +1,169 @@
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #232323;
+    padding: 10px 10px;
+    color: #D5D5D5;
+    height: 70px;
+    border-bottom: 2px solid #444444;
+    position: fixed;
+    width: 100%;
+    z-index: 150;
+}
+
+.navBarDivSmall {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* border: 1px solid red; */
+    width:50%;
+    gap: 15px;
+    
+}
+
+.navBarDivSmall button {
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    color: #d5d5d5;
+    font-size: 1rem;
+}
+
+.chevron {
+    vertical-align: -15%;
+    transition: all 0.1s ease-in-out;
+}
+
+.rotated {
+    -ms-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+
+.navBarDivLarge {
+    height: 100%;
+    display: flex;
+    gap: 15px;
+    width:50%;
+    justify-content: flex-end;
+}
+
+.searchContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.searchIcon {
+    height: 100%;
+    font-size: 1.7rem;
+}
+
+.navBar form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchContainer input {
+    height: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 70px;
+    width: 99vw;
+    background-color: #444444;
+    border: 2px solid transparent;
+    font-size: 1rem;
+    color: #D5D5D5;
+    z-index: 200;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width:100vw;
+    z-index: 180;
+    background-color: rgba(0, 0, 0, 0.274);
+}
+
+.hidden {
+    display: none;
+}
+
+.menuIcon {
+    font-size: 2rem;
+    height: 100%;
+}
+
+.navBar a {
+    display: block;
+    line-height: 0;
+}
+
+.menu {
+    border-top: 2px solid #444444;
+    position: absolute;
+    background-color: #232323;
+    top: 68px;
+    right: 0;
+    z-index: 150;
+    width: 65%;
+    max-width: 300px;
+    border-radius: 0 0 0 10px;
+}
+
+.menuItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 15px;
+    text-align: left;
+    border-bottom: 2px solid #444444;
+}
+
+.menuItem p {
+    color: #d5d5d5;
+    width: 80%;
+}
+
+.username {
+    font-size: 0.9rem;
+}
+
+.menuOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width:100vw;
+    z-index: 149;
+    background-color: rgba(0, 0, 0, 0.274);
+}
+
+.navBar button {
+    height: 100%;
+    background: none;
+    border: none;
+    color: #d5d5d5  
+}
+
+/* .add {
+    color: #D1AE00;
+
+} */
+
+.subMenuIcon {
+    font-size: 1.2rem;
+    color: #D1AE00
+}
+
+.menuItem:last-child {
+    border-bottom: none;
+}
+
+
+

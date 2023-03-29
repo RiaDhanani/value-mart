@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;500&display=swap');
+
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.514);
+}
+
 .landingPage {
     display: flex;
     height: 100vh;
@@ -7,7 +18,8 @@
     background-image: url("../public/landing-page-bg.jpg");
     background-position: center center;
     background-size: cover;
-    width: 70%;
+    width: 90%;
+    position: relative;
 }
 
 .landingPageDisplayText {
@@ -15,7 +27,7 @@
     top: 50%;
     padding: 0 50px;
     height: 35%;
-    width: 70%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -23,20 +35,42 @@
 }
 
 .heading {
+    font-family: 'Montserrat', sans-serif;
     font-size: 4rem;
     color: #D1AE00;
     margin: 0;
-    letter-spacing: 3px;
-    font-weight: normal;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.or {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.separator {
+    width: 8%;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #232323;
 }
 
 .landingPageDisplayText p {
-    font-size: 1.2rem;
+    word-spacing: 1px;
+    line-height: 1.8;
+    font-size: 1rem;
+    white-space: pre-line;
 }
 
 .landingPageDisplayText p:last-child {
+    font-size: 1rem;
+    line-height: 1;
+    word-spacing: 1px;
     font-weight: bold;
 }
+
 
 .landingPageSidebar {
     width: 30%;
@@ -45,8 +79,19 @@
     background-image: url("../public/box-icon.svg");
     background-repeat: no-repeat;
     background-position-x: center;
-    background-position-y: 25%;
+    background-position-y: 30%;
     background-size: 40%;
+    text-align: center;
+}
+
+.login {
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.loginText {
+    font-size: 0.9rem;
 }
 
 .boxImage {
@@ -66,19 +111,36 @@
     color: #D5D5D5;
 }
 
-@media screen and (max-width: 600px) {
-    .landingPage {
-        flex-direction: column;
+.landingPageSidebarContent a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+@media screen and (max-width: 1300px) {
+    .heading {
+        font-size: 3rem;
     }
 
+    .or {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 1080px) {
     .landingPageDisplay {
-        width: 100%;
-        height: 50%;
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width: 930px) {
+    .heading {
+        font-size: 2.5rem;
     }
 
-    .landingPageSidebar {
-        width: 100%;
-        height: 50%;
-        background:none;
+    .or {
+        font-size: 2.2rem;
     }
-} 
+}

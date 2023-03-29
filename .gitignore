@@ -32,3 +32,8 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# buggy folders
+/pages_old
+/componenents_old
+/styles_old

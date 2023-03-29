@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;500&display=swap');
+
+.landingPageDisplay {
+    background-image: url("../../public/landing-page-bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.overlay {
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.landingPageDisplayText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    gap: 5vh;
+}
+
+.landingPageDisplayText h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    word-spacing: 1px;
+    color: #D1AE00;
+    width: 90%;
+}
+
+.or {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+
+.landingPageDisplayText p {
+    width: 70%;
+    line-height: 1.5;
+}
+
+.landingPageDisplayText p:last-child {
+    font-weight: bold;
+}
+
+.login {
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.loginText {
+    font-size: 0.9rem;
+}
+
+.buttons {
+    width: 90%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 3;
+    gap: 5vh;
+}
+
+.buttons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}

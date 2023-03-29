@@ -4,13 +4,6 @@
     padding-top: 70px;
 }
 
-/* .sideBar {
-    width: 20%;
-    min-height: calc(100vh - 70px);
-    position: fixed;
-    border-right: 2px solid #444444;
-} */
-
 .items {
     margin-left: 20%;
     padding: 30px 30px 30px 80px;
@@ -33,4 +26,29 @@
     display: flex;
     flex-wrap: wrap;
     gap: 80px;
+}
+
+@media screen and (max-width: 799px) {
+    .items {
+        margin-left: 0;
+        padding: 30px 10px;
+        width: 100%;
+    }
+
+    .browse {
+        padding-top: 70px;
+    }
+
+    .container {
+        align-items: center;
+    }
+
+    .itemListContainer {
+        align-items: center;
+    }
+
+    .itemList {
+        justify-content: center;
+        gap: 50px;
+    }
 }

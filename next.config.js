@@ -4,5 +4,8 @@ module.exports = {
       'res.cloudinary.com'
     ],
   },
+  experimental: {
+    scrollRestoration: true,
+  },
   reactStrictMode: true,
 }

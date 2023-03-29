@@ -1,0 +1,127 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100000;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #232323;
+    border: 2px solid #D5D5D5;
+    max-width: 100vw;
+    width: 800px;
+    max-height: 100vh;
+    height: 700px;
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.closeBtn {
+    font-size: 1.8rem;
+    vertical-align: bottom;
+}
+
+.singleItem {
+    width: 100%;
+    border: 1px solid #444444;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.body {
+    padding-top: 10px;
+    width: 90%;
+    height:90%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    overflow-y: auto;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    color: #D1AE00;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.buttons button {
+    background-color: transparent;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.viewBtn {
+    border: 1px solid #d5d5d5;
+    color: #d5d5d5;
+}
+
+.deleteBtn {
+    border: 1px solid tomato;
+    color: tomato;
+}
+
+@media (hover: hover) {
+    .viewBtn:hover {
+        background-color: #D5D5D5;
+        color: #232323;
+    }
+
+    .deleteBtn:hover {
+        background-color: tomato;
+        color: #232323;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    .modal {
+        width: 100vw;
+        height: 100%;
+        border-radius: 0;
+        border: none;
+        padding: 5px;
+    }
+
+    .singleItem {
+        gap: 15px;
+    }
+
+    .itemInfo {
+        flex-grow: 1;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+}

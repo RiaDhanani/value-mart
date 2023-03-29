@@ -1,6 +1,7 @@
 .sideBar {
     width: 20%;
     height: 80%;
+    z-index: 101;
     min-height: calc(100vh - 70px);
     position: fixed;
     border-right: 2px solid #444444;
@@ -8,6 +9,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    background-color: #232323;
     overflow-y: auto;
     scrollbar-width: thin;
     scrollbar-color: #D5D5D5 #444444;
@@ -97,7 +99,7 @@
     align-items: center;
 }
 
-.category input:focus + label {
+.category input:focus-visible + label {
     outline: 1px solid #D5D5D5;
 }
 
@@ -105,6 +107,7 @@
     vertical-align: -10%;
     margin-right: 10px;
     pointer-events: none;
+    transition: all 0.1s ease-in-out;
 }
 
 .rotated {
@@ -114,8 +117,11 @@
     transform: rotate(90deg);
 }
 
-/* @media screen and (max-width: 600px) {
+@media screen and (max-width: 799px) {
     .sideBar {
-        display: none
+        width: 100%;
+        border-right: none;
+        background-color: #232323f8;
+        /* transform: translateX(-2%) */
     }
-} */
+}
