@@ -6,7 +6,7 @@ const AddItem = () => {
         <div className={addItemStyle.container}>
             <div className={addItemStyle.blockOne}>
                 <div className={addItemStyle.blockOneSmall}>
-                    <label htmlfor="itemImage">Choose a profile picture:</label>
+                    <label htmlFor="itemImage">Choose a profile picture:</label>
                     <input type="file" accept="image/*" name="itemImage" id="itemImage" className={`${addItemStyle.formInput} ${addItemStyle.imageUpload}`}/>
                 </div>
                 <div className={addItemStyle.blockOneLarge}>
