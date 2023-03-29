@@ -39,7 +39,7 @@ const AddItem = () => {
                     </div>
                     <div className={addItemStyle.formElement}>
                         <label htmlFor="description">Description:</label>
-                        <textarea name="description" id="description" maxlength="200" className={`${addItemStyle.formInput} ${addItemStyle.textArea}`}/>
+                        <textarea name="description" id="description" maxLength="200" className={`${addItemStyle.formInput} ${addItemStyle.textArea}`}/>
                     </div>
                 </div>
                 <div className={addItemStyle.blockOneSmall}>
