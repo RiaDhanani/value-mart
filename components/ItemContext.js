@@ -33,7 +33,7 @@ function useItemContext () {
     type: 'Electronics', contact: { Twitter: '@nasa' },
     used: 'Used More Than One Year', broken: 'Unbroken', description: "Rock Candy brand Xbox controller"},
     {user: 0, id: 6, name: 'Bicycle lock', img:'https://res.cloudinary.com/prnkdslv/image/upload/v1634894314/TrashOrTreasure/ItemImages/4124fdbc3711e624fe9d2bbdfaf93f52_ip8nqp.jpg', location: 'Gampaha',
-    type: 'Other', contact: { Whatsapp: '94777123456' },
+    type: 'Other', contact: { WhatsApp: '94777123456' },
     used: 'Used Few Months', broken: 'Unbroken', description: "Bicycle lock with combination lock"},
     {user: 0, id: 7, name: 'Queen sized Bed with mattress and 2 pillows', img:'https://res.cloudinary.com/prnkdslv/image/upload/v1634828218/TrashOrTreasure/itemImages/n6b9mzzxkvmfyo8eym0e.jpg', location: 'Kandy',
     type: 'Furniture', contact: { Email: 'itemholder@me.com' },
