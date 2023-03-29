@@ -16,8 +16,8 @@ const Browse = () => {
       return (
         <>
           <Head>
-            <title>Browse | Trash or Treasure</title>
-            <meta name="keywords" content="Sri Lanka, free, used, trinkets, random, Trash or Treasure, trash, treasure"></meta>
+            <title>Browse | ValueMart</title>
+            <meta name="keywords" content="reselling items, best out of waste, university"></meta>
           </Head>
           <h1 style={{ width: '100%', marginTop: '20px', textAlign: 'center', color:'#d5d5d5'}}>Loading...</h1>
         </>
@@ -27,8 +27,8 @@ const Browse = () => {
     return (
         <>
           <Head>
-              <title>Browse | Trash or Treasure</title>
-              <meta name="keywords" content="Sri Lanka, free, used, trinkets, random, Trash or Treasure, trash, treasure"></meta>
+              <title>Browse | ValueMart</title>
+              <meta name="keywords" content="reselling items, best out of waste, university"></meta>
           </Head>
           <div className={browseStyle.items}>
             <ItemList filteredItems={filteredItems}/>

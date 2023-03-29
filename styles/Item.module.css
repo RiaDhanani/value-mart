@@ -15,6 +15,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: #000;
 }
 
 .back a {
@@ -92,6 +93,7 @@
 .individualInfo {
     display: flex;
     align-items:flex-start;
+    color: #000;
 }
 
 .individualInfoIcon {
@@ -111,7 +113,7 @@
 }
 
 .condition p {
-    background-color: #444444;
+    background-color: #d5d5d5;
     padding: 5px 10px;
     text-align: center;
     border-radius: 20px;
@@ -122,12 +124,13 @@
 }
 
 .name {
-    color: #D1AE00;
+    color: #000;
     font-size: 1.5rem;
 }
 
 .info p {
     font-size: 1rem;
+    color: #000;
 }
 
 @media screen and (max-width: 1366px) {

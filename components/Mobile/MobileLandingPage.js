@@ -22,7 +22,7 @@ const MobileLandingPage = () => {
             </div>
             <div className={LandingPageStyles.buttons}>
                 {user ? <Button text={'List Your Trash'} onClick={() => setShowModal(true)}/> : <Button text={'List Your Trash'} onClick={() => setShowLoginPromptModal(true)}/>}
-                <Link href="/browse"><a><Button text={'Browse Treasures'}/></a></Link>
+                <Link legacyBehavior href="/browse"><a><Button text={'Browse Treasures'}/></a></Link>
                 <Modal show={showModal} onClose={() => setShowModal(false)}/>
                 {user ? <p className={LandingPageStyles.loginText}>Logged in as {user.name} <a href="/api/auth/logout" className={LandingPageStyles.login}>Log out</a> </p> : <a href="/api/auth/login" className={LandingPageStyles.login}>Log in/Register</a>}
             </div>

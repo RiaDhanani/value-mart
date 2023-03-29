@@ -60,6 +60,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis; 
+    color: #fff
 }
 
 .text {
@@ -73,5 +74,9 @@
     justify-content: space-around;
     height: 60%;
     font-size: 0.8rem;
+}
+
+.text :global(.text) {
+    color: #fff;
 }
 

@@ -53,10 +53,10 @@ const Navbar = ({ dispatch }) => {
     return (
         <nav className={navbarStyle.navBar}>
             <div className={navbarStyle.navBarDiv}>
-                <Link href="/">
+                <Link legacyBehavior href="/">
                     <a className={navbarStyle.navBarAnchor}>
                         <Image 
-                            src="/box-icon.svg"
+                            src="/logo.PNG"
                             height={45}
                             width={45}
                             className={navbarStyle.navBarImage}

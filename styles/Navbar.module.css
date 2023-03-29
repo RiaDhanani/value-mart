@@ -1,9 +1,9 @@
 .navBar {
     display: flex;
     justify-content: space-between;
-    background-color: #232323;
+    background-color: #ffffff;
     padding: 10px 30px;
-    color: #D5D5D5;
+    color: #000000;
     height: 70px;
     border-bottom: 2px solid #444444;
     position: fixed;
@@ -43,6 +43,7 @@
     display: flex;
     align-items: center;
     width: 60%;
+    margin-left: -7%;
 }
 
 .searchIcon {
@@ -56,11 +57,11 @@
     outline: none;
     height: 1.7rem;
     padding: 0.7rem 0.7rem 0.7rem 1.5rem;
-    background-color: #444444;
+    background-color: #d5d5d5;
     border: 2px solid transparent;
     border-radius: 10px;
     font-size: 0.9rem;
-    color: #D5D5D5;
+    color: #010101;
     transition: all .2s ease-in;
 }
 

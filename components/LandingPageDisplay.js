@@ -5,10 +5,10 @@ const LandingPageDisplay = () => {
         <div className={LandingPageStyles.landingPageDisplay}>
             <div className={LandingPageStyles.overlay}></div>
             <div className={LandingPageStyles.landingPageDisplayText}>
-                <h1 className={LandingPageStyles.heading}>Trash <span className={LandingPageStyles.or}>or</span> Treasure</h1>
-                <div className={LandingPageStyles.separator}></div>
-                <p>{`Moving? Spring cleaning? Just got too much stuff?\n Don't throw it away, someone out there might be looking for it!`}</p>
-                <p>{`One man's trash is another man's treasure.`}</p>
+                <h4 className={LandingPageStyles.heading}>ValueMart</h4>
+                <p>{`Find what you need, sell what you don't.`}</p>
+                <p>{`Holiday cleaning? Moving out? or just have too much stuff?\nHere's the ultimate online marketplace for all your needs!`}</p>
+                
             </div>
         </div>
     )

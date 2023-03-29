@@ -61,7 +61,7 @@ const MobileNavbar = ({ dispatch, setShowFilters, showFilters }) => {
     return (
         <nav className={navbarStyle.navBar}>
             <div className={navbarStyle.navBarDivSmall}>
-                <Link href="/">
+                <Link legacyBehavior href="/">
                     <a className={navbarStyle.navBarAnchor}>
                         <Image 
                             src="/box-icon.svg"

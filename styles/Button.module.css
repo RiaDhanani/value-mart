@@ -1,10 +1,10 @@
 .btn {
     width: 100%;
     max-width: 250px;
-    color: #D1AE00;
-    border: 3px solid #D1AE00;
+    color: #000;
+    border: 3px solid transparent;
     border-radius: 10px;
-    background-color: #232323;
+    background-color: #9c9c9c;
     padding: 15px 30px;
     font-size: 1rem;
     transition: all 0.3s ease;
@@ -13,10 +13,10 @@
 
 .navBarBtn {
     cursor: pointer;
-    color: #D1AE00;
-    border: 2px solid #D1AE00;
+    color: #2b9b9d;
+    border: 2px solid #2b9b9d;
     border-radius: 10px;
-    background-color: #232323;
+    background-color: #ffffff;
     padding: 5px 30px;
     font-size: 1rem;
     transition: all 0.3s ease;
@@ -24,13 +24,13 @@
 
 @media (hover: hover) {
     .navBarBtn:hover {
-        background-color: #D1AE00;
-        color: #232323;
+        background-color: #2b9b9d;
+        color: #ffffff;
     }
     
     .btn:hover {
-        background-color: #D1AE00;
-        color: #232323;
+        background-color: #7e7e7e;
+        color: #ffffff;
     }
 }
 
