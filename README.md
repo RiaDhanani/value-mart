@@ -19,4 +19,4 @@ The project was created with **[Next.js](https://nextjs.org/)** using [`create-n
 
 This project was not created for commercial purposes, only for me to develop my React and CSS skills. This was my first attempt at using Next.js and I thoroughly enjoyed the developer experience coupled with the smooth CI/CD of hosting via Vercel!
 
-For any further information, contact me at <prnkdslv@gmail.com>. Thanks for reading!
+You can contact me at <prnkdslv@gmail.com>. Thanks for reading!
