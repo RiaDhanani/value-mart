@@ -4,16 +4,16 @@ import { BiChevronDown } from "@react-icons/all-files/bi/BiChevronDown";
 import { BiChevronRight } from "@react-icons/all-files/bi/BiChevronRight";
 
 const Sidebar = () => {
-    const [openCategory, setOpenCategory] = useState(null);
+    const[openCategories, setOpenCategories] = useState([]);
+
 
     const handleClick = (e) => {
-        console.log(e.target)
-        if (openCategory === e.target.parentNode.id) {
-            setOpenCategory(null)
+        if (openCategories.includes(e.target.parentNode.id)) {
+            setOpenCategories(openCategories.filter(category => category != e.target.parentNode.id))
         } else {
-            setOpenCategory(e.target.parentNode.id)
+            setOpenCategories([...openCategories, e.target.parentNode.id])
         }
-        
+        console.log(openCategories);
     }
 
     return (
@@ -21,25 +21,28 @@ const Sidebar = () => {
             <h2 className={sidebarStyle.sideBarTitle}> Filter </h2>
             <div className={sidebarStyle.mainCategory} id="1">
                 <button className={sidebarStyle.mainCategoryTitle} onClick={handleClick}>
-                    <h3 className={sidebarStyle.mainCategoryTitleText}><BiChevronRight className={`${sidebarStyle.chevron} ${openCategory != 1 ? `` : `${sidebarStyle.rotated}`} `} />Used Status</h3>
+                    <h3 className={sidebarStyle.mainCategoryTitleText}><BiChevronRight className={`${sidebarStyle.chevron} ${!openCategories.includes('1') ? `` : `${sidebarStyle.rotated}`} `} />Used Status</h3>
                 </button>
-                <div className={`${openCategory != 1 ? `${sidebarStyle.categoryListHidden}` : `${sidebarStyle.categoryListVisible}`} `}>
+                <div className={`${!openCategories.includes('1') ? `${sidebarStyle.categoryListHidden}` : `${sidebarStyle.categoryListVisible}`} `}>
                     <div className={sidebarStyle.category}>
-                        <p>Category 1</p>
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"/>
+                        <label htmlFor="vehicle1"> I have a bike</label>
                     </div>
                     <div className={sidebarStyle.category}>
-                        <p>Category 2</p>
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"/>
+                        <label htmlFor="vehicle1"> I have a bike</label>
                     </div>
                     <div className={sidebarStyle.category}>
-                        <p>Category 3</p>
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"/>
+                        <label htmlFor="vehicle1"> I have a bike</label>
                     </div>
                 </div>
             </div>
             <div className={sidebarStyle.mainCategory} id="2">
                 <button className={sidebarStyle.mainCategoryTitle} onClick={handleClick}>
-                    <h3 className={sidebarStyle.mainCategoryTitleText}><BiChevronRight className={`${sidebarStyle.chevron} ${openCategory != 2 ? `` : `${sidebarStyle.rotated}`} `} />Broken Status</h3>
+                    <h3 className={sidebarStyle.mainCategoryTitleText}><BiChevronRight className={`${sidebarStyle.chevron} ${!openCategories.includes('2') ? `` : `${sidebarStyle.rotated}`} `} />Broken Status</h3>
                 </button>
-                <div className={`${openCategory != 2 ? `${sidebarStyle.categoryListHidden}` : `${sidebarStyle.categoryListVisible}`} `}>
+                <div className={`${!openCategories.includes('2') ? `${sidebarStyle.categoryListHidden}` : `${sidebarStyle.categoryListVisible}`} `}>
                     <div className={sidebarStyle.category}>
                         <p>Category 1</p>
                     </div>
@@ -53,9 +56,9 @@ const Sidebar = () => {
             </div>
             <div className={sidebarStyle.mainCategory} id="3">
                 <button className={sidebarStyle.mainCategoryTitle} onClick={handleClick}>
-                    <h3 className={sidebarStyle.mainCategoryTitleText}><BiChevronRight className={`${sidebarStyle.chevron} ${openCategory != 3 ? `` : `${sidebarStyle.rotated}`} `} />Tags </h3>
+                    <h3 className={sidebarStyle.mainCategoryTitleText}><BiChevronRight className={`${sidebarStyle.chevron} ${!openCategories.includes('3') ? `` : `${sidebarStyle.rotated}`} `} />Tags </h3>
                 </button>
-                <div className={`${openCategory != 3 ? `${sidebarStyle.categoryListHidden}` : `${sidebarStyle.categoryListVisible}`} `}>
+                <div className={`${!openCategories.includes('3') ? `${sidebarStyle.categoryListHidden}` : `${sidebarStyle.categoryListVisible}`} `}>
                     <div className={sidebarStyle.category}>
                         <p>Category 1</p>
                     </div>
