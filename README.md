@@ -1,34 +1,22 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Trash or Treasure
 
-## Getting Started
+## Information
 
-First, run the development server:
+Trash or Treasure is an online item catalog created to help users give away their unwanted belongings to someone who may make better use of them. 
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+The project was created with **[Next.js](https://nextjs.org/)** using [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). Additionally, **[Cloudinary](https://cloudinary.com)** is used for image asset management and **[Auth0](https://auth0.com/)** is used for user authentication. 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ The project is hosted via **[Vercel](https://vercel.com/)** and can be found at **[https://trash-or-treasure.vercel.app/](https://trash-or-treasure.vercel.app/)**. 
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Developer's comments
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
++ While the website is meant to function as an online item catalog, an item **database** has not yet been implemented. Instead, a database has been simulated using React's **Context API** and **Local storage**. Therefore, any added items will not be visible outside of the user's browser. 
++ For testing purposes, feel free to use a fake e-mail and password for user authentication if you are not comfortable sharing your real information, as e-mail verification is not necessary. 
++ The location of the item is intentionally left unvalidated allowing users to decide the level of specificity of the location such that their privacy may be protected. Users may then provide a more specific location to interested parties through direct contact.
++ As there is no payment involved, it is expected that once a user desires an item, further proceedings will be conducted between the two parties involved through the means of contact provided by the item-holder. Trash or Treasure will not be held liable for any false or misleading information provided by the item-holder.  
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Footnotes
 
-## Learn More
+This project was not created for commercial purposes, only for me to develop my React and CSS skills. This was my first attempt at using Next.js and I thoroughly enjoyed the developer experience coupled with the smooth CI/CD of hosting via Vercel!
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+For any further information, contact me at <prnkdslv@gmail.com>. Thanks for reading!
