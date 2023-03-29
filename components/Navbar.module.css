@@ -8,7 +8,7 @@
     border-bottom: 2px solid #444444;
     position: fixed;
     width: 100%;
-    z-index: 1000000000000000000000;
+    z-index: 99;
 }
   
 .navBarDiv {
@@ -50,7 +50,7 @@
     background-color: #444444;
     border: 2px solid transparent;
     border-radius: 10px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #D5D5D5;
     transition: all .2s ease-in;
 }

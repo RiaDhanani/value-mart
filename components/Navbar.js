@@ -1,11 +1,16 @@
+import { useState } from 'react';
 import Image from 'next/image'
 import Link from 'next/link'
 import Button from './Button'
+import Modal from './Modal';
+import AddItem from './AddItem'
 import { BiChevronDown } from "@react-icons/all-files/bi/BiChevronDown";
 import { MdSearch } from "@react-icons/all-files/md/MdSearch";
 import navbarStyle from './Navbar.module.css'
 
 const Navbar = () => {
+    const [showModal, setShowModal] = useState(false);
+
     return (
         <nav className={navbarStyle.navBar}>
             <div className={navbarStyle.navBarDiv}>
@@ -26,7 +31,7 @@ const Navbar = () => {
                 </div>
             </div>
             <div className={navbarStyle.navBarDiv}>
-                <Link href="/browse" passHref><Button text={'+ Add Item'} navBar={true}/></Link>
+                <Button onClick={() => setShowModal(true)} text={'+ Add Item'} navBar={true}/>
                 <a className={navbarStyle.navBarAnchor}>
                     <Image 
                         src="/user-circle-solid.svg"
@@ -36,6 +41,9 @@ const Navbar = () => {
                     />
                 </a>
             </div>
+            <Modal show={showModal} onClose={() => setShowModal(false)}>
+                <AddItem />
+            </Modal>
         </nav>
     )
 }

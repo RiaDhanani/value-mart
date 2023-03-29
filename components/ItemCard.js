@@ -6,15 +6,15 @@ const ItemCard = ({ item }) => {
         <div className={itemCardStyle.container}>
             <div className={itemCardStyle.overlay}></div>
             <Image 
-                src={`/item-images/${item.img}`}
+                src={item.img}
                 layout="fill"
                 objectFit="cover"
                 className={itemCardStyle.image}
             />
             <h3 className={itemCardStyle.title}>{item.name}</h3>
             <div className={itemCardStyle.text}>
-                <p>{item.location}</p>
-                {Object.values(item.contact).map(contact => ( <p key={contact}>{contact}</p>))}
+                <p>Location: {item.location}</p>
+                {Object.entries(item.contact).map(contact => ( <p key={contact}>{contact[0]}: {contact[1]}</p>))}
                 <p>{item.used}</p>
                 <p>{item.broken}</p>
             </div>
