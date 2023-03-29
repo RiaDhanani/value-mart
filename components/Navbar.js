@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { BiChevronDown } from "@react-icons/all-files/bi/BiChevronDown";
 import navbarStyle from './Navbar.module.css'
 
 const Navbar = () => {
@@ -16,9 +17,9 @@ const Navbar = () => {
                         />
                     </a>
                 </Link>
-                <a>Browse</a>
+                <Link href="/browse"><a className="browse">Browse<BiChevronDown className={navbarStyle.chevron}/></a></Link>
                 <form>
-                    <input type="text" name="searchbar" />
+                    <input type="text" name="searchbar" className={navbarStyle.search}/>
                 </form>
             </div>
             <div className={navbarStyle.navBarDiv}>
@@ -29,7 +30,6 @@ const Navbar = () => {
                         height={50}
                         width={50}
                         className={navbarStyle.profileIcon}
-                        className={navbarStyle.navBarImage}
                     />
                 </a>
             </div>
