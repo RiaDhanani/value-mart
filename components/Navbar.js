@@ -6,7 +6,7 @@ import Modal from './Modal';
 import AddItem from './AddItem'
 import { BiChevronDown } from "@react-icons/all-files/bi/BiChevronDown";
 import { MdSearch } from "@react-icons/all-files/md/MdSearch";
-import navbarStyle from './Navbar.module.css'
+import navbarStyle from '../styles/Navbar.module.css'
 
 const Navbar = () => {
     const [showModal, setShowModal] = useState(false);

@@ -17,11 +17,21 @@ const Browse = () => {
         used: 'Used over 1 year', broken: 'Unbroken', description: "These are apple earphones with a lightning connector. Well used. Don't need them as I don't use an iPhone anymore."},
         ])
 
+        const [filters, setFilters] = useState({used: { Unused: true, UsedLessThanOneMonth: true, UsedFewMonths: true, UsedMoreThanOneYear: true },
+            broken: { Unbroken: true, PartiallyBroken: true, CompletelyBroken: true },
+            tags: { Electronics: true, Books: true, CDs: true, Household: true, Furniture: true, Other: true },
+        });
+
+    // const [used, setUsed] = useState([]);
+    // const [broken, setBroken] = useState([]);
+    // const [tags, setTags] = useState([]);
+
+
     return (
         <main className={browseStyle.main}>
             <Navbar />
             <div className={browseStyle.browse}>
-                <Sidebar />
+                <Sidebar filters={filters} setFilters={setFilters}/>
                 <div className={browseStyle.items}>
                     <ItemList items={items}/>
                 </div>

@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import itemCardStyle from './ItemCard.module.css'
+import itemCardStyle from '../styles/ItemCard.module.css'
 
 const ItemCard = ({ item }) => {
     return (
