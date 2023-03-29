@@ -14,8 +14,8 @@ const LandingPageSidebar = () => {
             /> */}
             <div className={LandingPageStyles.landingPageSidebarContent}>
                 <p>What would you like to do today?</p>
-                <Link href="/addItem" passHref><Button text={'List Your Trash'}/></Link>
-                <Link href="/browse" passHref><Button text={'Browse Treasures'}/></Link>
+                <Link href="/addItem"><a><Button text={'List Your Trash'}/></a></Link>
+                <Link href="/browse"><a><Button text={'Browse Treasures'}/></a></Link>
                 <a>Login/Register</a>
             </div>
 

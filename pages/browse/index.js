@@ -4,7 +4,7 @@ import Sidebar from '../../components/Sidebar'
 import ItemList from '../../components/ItemList'
 import browseStyle from '../../styles/Browse.module.css'
 
-const index = () => {
+const Browse = () => {
     const [items, setItems] = useState([
         {id: 1, name: 'Apple Earphones', img:'https://res.cloudinary.com/prnkdslv/image/upload/v1633503659/TrashOrTreasure/ItemImages/image0_bsrlx6.jpg', location: 'Pitakotte',
         type: 'Electronics', contact: { Phone: '0777123456', Instagram: '@chknrs' },
@@ -30,4 +30,4 @@ const index = () => {
     )
 }
 
-export default index
+export default Browse
