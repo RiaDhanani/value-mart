@@ -33,7 +33,7 @@ const Browse = () => {
             <div className={browseStyle.browse}>
                 <Sidebar filters={filters} setFilters={setFilters}/>
                 <div className={browseStyle.items}>
-                    <ItemList items={items}/>
+                    <ItemList items={items} filters={filters}/>
                 </div>
             </div>
         </main>
