@@ -1,0 +1,63 @@
+.landingPage {
+    display: flex;
+    height: 100vh;
+
+}
+
+.landingPageDisplay {
+    background-image: url("../public/landing-page-bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    width: 70%;
+}
+
+.landingPageDisplayText {
+    position:relative;
+    top: 50%;
+    padding: 0 50px;
+    height: 35%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #D5D5D5;
+}
+
+.heading {
+    font-size: 4rem;
+    color: #D1AE00;
+    margin: 0;
+    letter-spacing: 3px;
+    font-weight: normal;
+}
+
+.landingPageDisplayText p {
+    font-size: 1.2rem;
+}
+
+.landingPageDisplayText p:last-child {
+    font-weight: bold;
+}
+
+.landingPageSidebar {
+    width: 30%;
+    background-color: #232323;
+    position: relative;
+}
+
+.boxImage {
+    position: absolute;
+    top: 25%;
+    right: 50%;
+}
+
+.landingPageSidebarContent {
+    position:relative;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 35%;
+    justify-content: space-between;
+    color: #D5D5D5;
+}

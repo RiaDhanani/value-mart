@@ -1,0 +1,28 @@
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #232323;
+    padding: 10px 30px;
+    color: #D5D5D5;
+    height: 70px;
+}
+  
+.navBarDiv {
+    display: flex;
+    width: 25%;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3rem;
+}
+
+.navBarDiv:last-child {
+    justify-content: flex-end;
+}
+
+.navBarAnchor {
+    margin-top: 5px;
+}
+
+.profileIcon {
+    filter: invert(100%) sepia(0%) saturate(4984%) hue-rotate(180deg) brightness(109%) contrast(67%);
+}
