@@ -13,7 +13,6 @@ import { MdDeleteForever } from "@react-icons/all-files/md/MdDeleteForever";
 import useMediaQuery from '../../../hooks/MediaQuery'
 import { useUser } from '@auth0/nextjs-auth0';
 import DeleteConfirmationModal from '../../../components/DeleteConfirmationModal'
-import { SRLWrapper } from "simple-react-lightbox";
 import Head from 'next/head'
 
 const Item = ({ slug }) => {
@@ -106,17 +105,6 @@ const Item = ({ slug }) => {
           </div>
           <div className={itemStyle.itemDetails}>
           { isBreakPoint ? <div className={itemStyle.name}><h1>{item.name}</h1></div> : ''}
-            
-            <div className={itemStyle.imageContainer}>
-              <SRLWrapper options={options}>
-                <Image 
-                  src={item.img}
-                  layout="fill"
-                  objectFit="cover"
-                  className={itemStyle.image}
-                /> 
-              </SRLWrapper>
-            </div>
             <div className={itemStyle.info}>
               { isBreakPoint ? '' : <div className={itemStyle.name}><h1>{item.name}</h1></div>}
               <div className={itemStyle.infoText}>
