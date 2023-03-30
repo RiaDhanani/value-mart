@@ -84,7 +84,7 @@ const Item = ({ slug }) => {
     return (
       <div className={itemStyle.container}>
         <Head>
-          <title>Not Found | Trash or Treasure</title>
+          <title>Not Found | ValueMart</title>
         </Head>
         <div className={itemStyle.back}>
           <a href="#" onClick={goBack}><FiArrowLeftCircle /></a>
@@ -97,8 +97,8 @@ const Item = ({ slug }) => {
     return (
       <div className={itemStyle.container}>
           <Head>
-              <title>{item.name} | Trash or Treasure</title>
-              <meta name="keywords" content={`Sri Lanka, free, used, trinkets, random, Trash or Treasure, trash, treasure, ${item.name}, ${item.location}`}></meta>
+              <title>{item.name} | ValueMart</title>
+              <meta name="keywords" content={`reselling items, best out of waste, university, ${item.name}, ${item.location}`}></meta>
           </Head>
           <div className={itemStyle.back}>
             <a href="#" onClick={goBack}><FiArrowLeftCircle /></a>

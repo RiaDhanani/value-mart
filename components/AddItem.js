@@ -21,7 +21,7 @@ const AddItem = ({ setAddItemDone, setAddedItem }) => {
         const formData = new FormData();
         formData.append("file", file);
         formData.append("upload_preset", "qlshxsot")
-        formData.append("folder", "/TrashOrTreasure/itemImages")
+        formData.append("folder", "/ValueMart/itemImages")
 
         fetch('https://api.cloudinary.com/v1_1/prnkdslv/image/upload', {
             method: 'POST',

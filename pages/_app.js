@@ -2,7 +2,6 @@ import { ItemContextProvider } from '../components/ItemContext'
 import { UserProvider } from '@auth0/nextjs-auth0';
 import '../styles/globals.css'
 import "../styles/nprogress.css";
-import SimpleReactLightbox from 'simple-react-lightbox'
 import NProgress from "nprogress";
 import Router from 'next/router'
 
@@ -17,9 +16,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <UserProvider>
       <ItemContextProvider>
-        <SimpleReactLightbox>
           {getLayout(<Component {...pageProps} />)}
-        </SimpleReactLightbox>
       </ItemContextProvider>
     </UserProvider>
     )

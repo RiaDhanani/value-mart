@@ -2,21 +2,13 @@
 
 ## Information
 
-Trash or Treasure is an online item catalog created to help users give away their unwanted belongings to someone who may make better use of them. 
+Value Mart is an online item inventory designed to assist users in selling their unwanted possessions to someone who might use them more effectively. 
 
 The project was created with **[Next.js](https://nextjs.org/)** using [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). Additionally, **[Cloudinary](https://cloudinary.com)** is used for image asset management and **[Auth0](https://auth0.com/)** is used for user authentication. 
 
- The project is hosted via **[Vercel](https://vercel.com/)** and can be found at **[https://trash-or-treasure.vercel.app/](https://trash-or-treasure.vercel.app/)**. 
-
 ## Developer's comments
 
-+ While the website is meant to function as an online item catalog, an item **database** has not yet been implemented. Instead, a database has been simulated using React's **Context API** and **Local storage**. Therefore, any added items will not be visible outside of the user's browser. 
-+ For testing purposes, feel free to use a fake e-mail and password for user authentication if you are not comfortable sharing your real information, as e-mail verification is not necessary. 
-+ The location of the item is intentionally left unvalidated allowing users to decide the level of specificity of the location such that their privacy may be protected. Users may then provide a more specific location to interested parties through direct contact.
-+ As there is no payment involved, it is expected that once a user desires an item, further proceedings will be conducted between the two parties involved through the means of contact provided by the item-holder. Trash or Treasure will not be held liable for any false or misleading information provided by the item-holder.  
-
-## Footnotes
-
-This project was not created for commercial purposes, only for me to develop my React and CSS skills. This was my first attempt at using Next.js and I thoroughly enjoyed the developer experience coupled with the smooth CI/CD of hosting via Vercel!
-
-You can contact me at <prnkdslv@gmail.com>. Thanks for reading!
++ The website is intended to serve as an online catalog of items, but it does not yet have an item **database**. Instead, the **Context API** and React's **Local storage** have been used to mimic a database. Thus, any added item persists only till the browser is open.
++ If you'd rather not share your actual information during testing, feel free to use a fake e-mail and password for user authentication. Email verification is not required. 
++ In order to safeguard users' privacy, the location of the item is left unvalidated. Users can choose how specific a location should be. Users can then get in touch with interested parties and give them a more precise address.
++ Since there is no money exchanged, the price ofan item is not mentioned and it is anticipated that once a user expresses interest in an item, further negotiations will take place between the two parties via the means of communication provided by the seller.

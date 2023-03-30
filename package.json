@@ -1,5 +1,5 @@
 {
-  "name": "trash-or-treasure",
+  "name": "value-mart",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -15,7 +15,6 @@
     "nprogress": "^0.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "simple-react-lightbox": "^3.6.9-0",
     "uuid": "^8.3.2"
   },
   "devDependencies": {
