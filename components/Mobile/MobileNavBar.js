@@ -64,7 +64,7 @@ const MobileNavbar = ({ dispatch, setShowFilters, showFilters }) => {
                 <Link legacyBehavior href="/">
                     <a className={navbarStyle.navBarAnchor}>
                         <Image 
-                            src="/box-icon.svg"
+                            src="/logo.PNG"
                             height={40}
                             width={40}
                             className={navbarStyle.navBarImage}

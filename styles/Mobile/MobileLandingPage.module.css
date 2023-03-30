@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;500&display=swap');
 
 .landingPageDisplay {
-    background-image: url("../../public/landing-page-bg.jpg");
+    background-image: url("../../public/background1.jpeg");
     background-position: center center;
     background-size: cover;
     position: relative;
@@ -17,7 +17,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(255, 255, 255, 0.6);
     z-index: 1;
 }
 
@@ -29,14 +29,15 @@
     z-index: 3;
     text-align: center;
     gap: 5vh;
+    color: #000;
 }
 
-.landingPageDisplayText h1 {
+.landingPageDisplayText h4 {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.8rem;
     font-weight: bold;
     word-spacing: 1px;
-    color: #D1AE00;
+    color: #2b9b9d;
     width: 90%;
 }
 
@@ -49,10 +50,15 @@
 .landingPageDisplayText p {
     width: 70%;
     line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 10%;
+    font-weight: 400;
 }
 
 .landingPageDisplayText p:last-child {
-    font-weight: bold;
+    margin-top: -15%;
+    white-space: pre-line;
+    white-space: pre-wrap;
 }
 
 .login {
@@ -63,6 +69,7 @@
 
 .loginText {
     font-size: 0.9rem;
+    color: #000;
 }
 
 .buttons {

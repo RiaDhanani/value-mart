@@ -11,7 +11,7 @@ export default handleAuth({
         let returnTo;
         const referer = req.headers.referer;
         if (referer.includes('browse')) {
-            returnTo = '/browse'
+            returnTo = '/'
         } else {
             returnTo = '/'
         }

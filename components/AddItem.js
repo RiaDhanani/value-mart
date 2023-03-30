@@ -77,7 +77,7 @@ const AddItem = ({ setAddItemDone, setAddedItem }) => {
                 contactDetail = contact.value
             }
 
-            const newItem = {
+            const newItem =  {
                 user: user.sub,
                 id: id,
                 name: itemName.value,

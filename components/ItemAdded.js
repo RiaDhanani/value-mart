@@ -41,7 +41,7 @@ const ItemAdded = ({ setAddItemDone, handleClose, addedItem }) => {
             </div>
             <div className={itemAddedStyle.buttons}>
                 <Button text={"Add New Item"} onClick={() => setAddItemDone(false)}/>
-                <Button text={"Browse Treasures"} onClick={returnToBrowse}/>
+                <Button text={"Browse Marketplace"} onClick={returnToBrowse}/>
             </div>
         </div>
     )
