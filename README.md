@@ -1,10 +1,12 @@
-# Trash or Treasure
+# ValueMart
 
 ## Information
 
 Value Mart is an online item inventory designed to assist users in selling their unwanted possessions to someone who might use them more effectively. 
 
 The project was created with **[Next.js](https://nextjs.org/)** using [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). Additionally, **[Cloudinary](https://cloudinary.com)** is used for image asset management and **[Auth0](https://auth0.com/)** is used for user authentication. 
+
+The project is hosted via **[Vercel](https://vercel.com/home)** and can be found at https://valuemart.vercel.app/.
 
 ## Developer's comments
 
