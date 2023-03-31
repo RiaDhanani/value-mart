@@ -58,7 +58,6 @@ const UserItemsModal = ({ show, onClose, setItemToDelete, setShowDelete }) => {
                             </div>
                             <div className={modalStyle.buttons}>
                                 <button className={modalStyle.viewBtn} onClick={() => viewItem(item.id)}>View</button>
-                                <button className={modalStyle.deleteBtn} onClick={() => deleteConfirm(item.id)}>Delete</button>
                             </div>
                         </div>
                     ))} </> : <h1 className={modalStyle.title}>No items added yet.</h1>}
