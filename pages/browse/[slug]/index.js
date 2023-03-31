@@ -105,6 +105,16 @@ const Item = ({ slug }) => {
           </div>
           <div className={itemStyle.itemDetails}>
           { isBreakPoint ? <div className={itemStyle.name}><h1>{item.name}</h1></div> : ''}
+
+          <div className={itemStyle.imageContainer}>
+                <Image 
+                  src={item.img}
+                  layout="fill"
+                  objectFit="cover"
+                  className={itemStyle.image}
+                /> 
+            </div>
+
             <div className={itemStyle.info}>
               { isBreakPoint ? '' : <div className={itemStyle.name}><h1>{item.name}</h1></div>}
               <div className={itemStyle.infoText}>
